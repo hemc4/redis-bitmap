@@ -7,3 +7,8 @@ func getCurrentDate() string {
 	return t.Format("2006-01-02")
 
 }
+
+func getYesterdayDate() string {
+	t := time.Now().Add(-24 * time.Hour)
+	return t.Format("2006-01-02")
+}

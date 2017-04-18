@@ -14,7 +14,7 @@ func getRandom() bool {
 	randNo := r1.Intn(100)
 	boolNo := randNo % 2
 
-	log.Println(randNo, boolNo)
+	log.Printf("%d", boolNo)
 	if boolNo == 1 {
 		return true
 	}
